@@ -11,7 +11,7 @@ describe("Pruebas en <FirstApp>", () => {
 
   test("debe mostrar el titulo en un h1", () => {
     const title = "Hola, Soy Goku";
-    const { container, getByText, getByTestId } = render(
+    const { getByText, getByTestId } = render(
       <FirstApp title={title} />
     );
     expect(getByText(title)).toBeTruthy();
